@@ -1,0 +1,165 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#arrow-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000; /* High value to ensure it's on top */
+    pointer-events: none; /* Allow clicks to pass through */
+    
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    justify-content: center; /* Center items horizontally */
+    height: 100vh; /* Adjust height as needed */
+    width: 45px; /* Width of the vertical navbar */
+    background-color: none;
+    padding-top: 0px;
+}
+
+.icon {
+    margin: 10px 0; /* Adjust spacing between icons */
+    text-align: center; /* Center icon horizontally */
+}
+
+.material-icons {
+    font-size: 24px;
+    color: white;
+    border-radius: 5px;
+}
+
+
+
+.material-icons:hover {
+      /* Dark grey */
+    color: #0c90e8;
+}
+
+.content {
+    margin-left: 200px; /* Same as the width of the sidebar */
+    padding: 60px;
+    height: 1px; /* Example content height */
+}
+
+.body {
+    background: url('mountain 2 parallax.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+
+}
+
+.header {
+    margin-left: 10vw;
+
+    position: fixed;
+    top: 0;
+    width: 80vw;
+    height: 10vh;
+    z-index: 1000;  
+    color: rgb(79, 19, 87);
+    text-shadow: 2px 2px 2px black;
+    font-size: 7vh;
+    text-align: center;
+    font-weight: bold;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    cursor: default;
+}
+
+.box {
+    width: 35px;
+    height: 35px;
+    font-size: x-large;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    /* Center vertically */
+    border: none;
+    color: white;
+    background-color: #882e80;
+    border-radius: 5px;
+    opacity: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    
+}
+
+.smalltable {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    opacity: 80%;
+    border: 5px solid white;
+    display: grid;
+    width: 100%;
+    /* Take full width of the parent */
+    height: 100%;
+    /* Take full height of the parent */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Distribute space around items */
+    
+}
+
+.bigtable {
+    width: 391px;
+    height: 391px;
+    cursor: none;
+    border-collapse: collapse;
+}
+
+#restart-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    bottom: 0;
+    background-color: rgb(241, 7, 117);
+    border-radius: 15px;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    color: beige;
+    height: 50px;
+    width: 150px;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+#restart-btn:hover{
+    background-color: rgb(235, 91, 158);
+}
+
+.table-div {
+
+    cursor: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+.big-mid-div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    display: block;
+}
+.footer{
+    position: fixed;
+    bottom: 0;
+    margin-left: 75vw;
+}

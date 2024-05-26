@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Super Tic Tac Toe</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+
+<body class="body">
+    <svg id="arrow-svg" style="position: absolute; z-index: 1000; pointer-events: none;"></svg>
+
+    
+    <nav class="navbar">
+        <span class="icon"><i class="material-icons">home</i> <!-- Home icon --></span>
+        <span class="icon"><i class="material-icons">arrow_forward</i> <!-- Arrow icon --></span>
+        <span class="icon"><i class="material-icons">info</i> <!-- Info icon --></span>
+        <span class="icon"><i class="material-icons">people</i> <!-- About us icon --></span>
+        <span class="icon"><i class="material-icons">playlist_add_check</i> <!-- Credits icon --></span>
+        <span class="icon"><i class="material-icons">menu</i> <!-- Hamburger icon --></span>
+        <span class="icon"><i class="material-icons">settings</i> <!-- Settings icon --></span>
+        <span class="icon"><i class="material-icons">account_circle</i> <!-- Account icon --></span>
+        <span class="icon"><i class="material-icons">login</i> <!-- Login icon --></span>
+        <span class="icon"><i class="material-icons">more_vert</i> <!-- Triple dot icon --></span>
+    </nav>
+    <header class="header ">Super Tic Tac Toe!</header>
+<div class="mid-big-div">
+
+<div class="table-div">
+    <table class="bigtable">
+        <tr>
+            <td>
+                <table class="smalltable" id="1">
+                    <tr>
+                        <td><button class="box 1" id="11"></button></td>
+                        <td><button class="box 1" id="12"></button></td>
+                        <td><button class="box 1" id="13"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 1" id="14"></button></td>
+                        <td><button class="box 1" id="15"></button></td>
+                        <td><button class="box 1" id="16"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 1" id="17"></button></td>
+                        <td><button class="box 1" id="18"></button></td>
+                        <td><button class="box 1" id="19"></button></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="smalltable" id="2">
+                    <tr>
+                        <td><button class="box 2" id="21"></button></td>
+                        <td><button class="box 2" id="22"></button></td>
+                        <td><button class="box 2" id="23"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 2" id="24"></button></td>
+                        <td><button class="box 2" id="25"></button></td>
+                        <td><button class="box 2" id="26"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 2" id="27"></button></td>
+                        <td><button class="box 2" id="28"></button></td>
+                        <td><button class="box 2" id="29"></button></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="smalltable" id="3">
+                    <tr>
+                        <td><button class="box 3" id="31"></button></td>
+                        <td><button class="box 3" id="32"></button></td>
+                        <td><button class="box 3" id="33"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 3" id="34"></button></td>
+                        <td><button class="box 3" id="35"></button></td>
+                        <td><button class="box 3" id="36"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 3" id="37"></button></td>
+                        <td><button class="box 3" id="38"></button></td>
+                        <td><button class="box 3" id="39"></button></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="smalltable" id="4">
+                    <tr>
+                        <td><button class="box 4" id="41"></button></td>
+                        <td><button class="box 4" id="42"></button></td>
+                        <td><button class="box 4" id="43"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 4" id="44"></button></td>
+                        <td><button class="box 4" id="45"></button></td>
+                        <td><button class="box 4" id="46"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 4" id="47"></button></td>
+                        <td><button class="box 4" id="48"></button></td>
+                        <td><button class="box 4" id="49"></button></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="smalltable" id="5">
+                    <tr>
+                        <td><button class="box 5" id="51"></button></td>
+                        <td><button class="box 5" id="52"></button></td>
+                        <td><button class="box 5" id="53"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 5" id="54"></button></td>
+                        <td><button class="box 5" id="55"></button></td>
+                        <td><button class="box 5" id="56"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 5" id="57"></button></td>
+                        <td><button class="box 5" id="58"></button></td>
+                        <td><button class="box 5" id="59"></button></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="smalltable" id="6">
+                    <tr>
+                        <td><button class="box 6" id="61"></button></td>
+                        <td><button class="box 6" id="62"></button></td>
+                        <td><button class="box 6" id="63"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 6" id="64"></button></td>
+                        <td><button class="box 6" id="65"></button></td>
+                        <td><button class="box 6" id="66"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 6" id="67"></button></td>
+                        <td><button class="box 6" id="68"></button></td>
+                        <td><button class="box 6" id="69"></button></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table class="smalltable" id="7">
+                    <tr>
+                        <td><button class="box 7" id="71"></button></td>
+                        <td><button class="box 7" id="72"></button></td>
+                        <td><button class="box 7" id="73"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 7" id="74"></button></td>
+                        <td><button class="box 7" id="75"></button></td>
+                        <td><button class="box 7" id="76"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 7" id="77"></button></td>
+                        <td><button class="box 7" id="78"></button></td>
+                        <td><button class="box 7" id="79"></button></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="smalltable" id="8">
+                    <tr>
+                        <td><button class="box 8" id="81"></button></td>
+                        <td><button class="box 8" id="82"></button></td>
+                        <td><button class="box 8" id="83"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 8" id="84"></button></td>
+                        <td><button class="box 8" id="85"></button></td>
+                        <td><button class="box 8" id="86"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 8" id="87"></button></td>
+                        <td><button class="box 8" id="88"></button></td>
+                        <td><button class="box 8" id="89"></button></td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table class="smalltable" id="9">
+                    <tr>
+                        <td><button class="box 9" id="91"></button></td>
+                        <td><button class="box 9" id="92"></button></td>
+                        <td><button class="box 9" id="93"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 9" id="94"></button></td>
+                        <td><button class="box 9" id="95"></button></td>
+                        <td><button class="box 9" id="96"></button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="box 9" id="97"></button></td>
+                        <td><button class="box 9" id="98"></button></td>
+                        <td><button class="box 9" id="99"></button></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</div></div>
+
+
+
+<span><button id="restart-btn">Restart</button></span>
+<footer class="footer">&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;&ThickSpace;Background designed by <a href="https://www.freepik.com">Freepik</a> </footer>
+<script src="newattempt.js"></script>
+</body>
+
+</html>
